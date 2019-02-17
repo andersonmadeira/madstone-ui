@@ -5,6 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "copy-license": "copy .\\LICENSE .\\dist\\madui",
+    "copy-readme": "copy .\\README.md .\\dist\\madui",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "build_lib": "ng build madui",
+    "pack_lib": "cd dist/madui && npm pack",
+    "package": "npm run build_lib && npm run copy_files && npm run pack_lib",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

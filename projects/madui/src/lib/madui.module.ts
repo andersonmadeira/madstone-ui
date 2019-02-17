@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { MadUIComponent } from './madui.component';
+import { MadUICheckbox } from './components';
 
 @NgModule({
-  declarations: [MadUIComponent],
+  declarations: [
+    MadUICheckbox,
+  ],
   imports: [
   ],
-  exports: [MadUIComponent]
+  exports: [
+    MadUICheckbox,
+  ]
 })
 export class MadUIModule { }

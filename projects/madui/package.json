@@ -1,6 +1,14 @@
 {
   "name": "madui",
   "version": "0.0.1",
+  "description": "MadUI component toolkit for the web",
+  "license": "MIT",
+  "keywords": ["Angular", "Library", "Toolkit", "Components", "GUI", "Interface", "Front"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andersonmadeira/madui"
+  },
+  "homepage": "https://github.com/andersonmadeira/madui",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
