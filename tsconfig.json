@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "madui": [
-        "dist/madui"
+      "ngx-flat-ui": [
+        "dist/ngx-flat-ui"
       ],
-      "madui/*": [
-        "dist/madui/*"
+      "ngx-flat-ui/*": [
+        "dist/ngx-flat-ui/*"
       ]
     }
   }

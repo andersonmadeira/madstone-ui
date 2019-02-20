@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'madui-checkbox',
+  selector: 'ngx-flat-ui-checkbox',
   templateUrl: 'checkbox.component.html',
   styleUrls: ['checkbox.component.css']
 })
-export class MadUICheckbox implements OnInit {
+export class NgxFlatUICheckboxComponent implements OnInit {
 
   constructor() { }
 

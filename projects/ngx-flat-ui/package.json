@@ -1,14 +1,14 @@
 {
-  "name": "madui",
+  "name": "ngx-flat-ui",
   "version": "0.0.1",
-  "description": "MadUI component toolkit for the web",
+  "description": "ngx-flat-ui component toolkit for the web",
   "license": "MIT",
   "keywords": ["Angular", "Library", "Toolkit", "Components", "GUI", "Interface", "Front"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andersonmadeira/madui"
+    "url": "https://github.com/andersonmadeira/ngx-flat-ui"
   },
-  "homepage": "https://github.com/andersonmadeira/madui",
+  "homepage": "https://github.com/andersonmadeira/ngx-flat-ui",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"

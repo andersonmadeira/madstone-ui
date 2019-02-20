@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "madui",
+      "ngx-flat-ui",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "madui",
+      "ngx-flat-ui",
       "kebab-case"
     ]
   }

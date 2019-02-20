@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "madui": {
-      "root": "projects/madui",
-      "sourceRoot": "projects/madui/src",
+    "ngx-flat-ui": {
+      "root": "projects/ngx-flat-ui",
+      "sourceRoot": "projects/ngx-flat-ui/src",
       "projectType": "library",
-      "prefix": "madui",
+      "prefix": "flat-ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/madui/tsconfig.lib.json",
-            "project": "projects/madui/ng-package.json"
+            "tsConfig": "projects/ngx-flat-ui/tsconfig.lib.json",
+            "project": "projects/ngx-flat-ui/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/madui/src/test.ts",
-            "tsConfig": "projects/madui/tsconfig.spec.json",
-            "karmaConfig": "projects/madui/karma.conf.js"
+            "main": "projects/ngx-flat-ui/src/test.ts",
+            "tsConfig": "projects/ngx-flat-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-flat-ui/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/madui/tsconfig.lib.json",
-              "projects/madui/tsconfig.spec.json"
+              "projects/ngx-flat-ui/tsconfig.lib.json",
+              "projects/ngx-flat-ui/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -38,9 +38,9 @@
         }
       }
     },
-    "madui-app": {
-      "root": "projects/madui-app/",
-      "sourceRoot": "projects/madui-app/src",
+    "ngx-flat-ui-app": {
+      "root": "projects/ngx-flat-ui-app/",
+      "sourceRoot": "projects/ngx-flat-ui-app/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
@@ -48,17 +48,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/madui-app",
-            "index": "projects/madui-app/src/index.html",
-            "main": "projects/madui-app/src/main.ts",
-            "polyfills": "projects/madui-app/src/polyfills.ts",
-            "tsConfig": "projects/madui-app/tsconfig.app.json",
+            "outputPath": "dist/ngx-flat-ui-app",
+            "index": "projects/ngx-flat-ui-app/src/index.html",
+            "main": "projects/ngx-flat-ui-app/src/main.ts",
+            "polyfills": "projects/ngx-flat-ui-app/src/polyfills.ts",
+            "tsConfig": "projects/ngx-flat-ui-app/tsconfig.app.json",
             "assets": [
-              "projects/madui-app/src/favicon.ico",
-              "projects/madui-app/src/assets"
+              "projects/ngx-flat-ui-app/src/favicon.ico",
+              "projects/ngx-flat-ui-app/src/assets"
             ],
             "styles": [
-              "projects/madui-app/src/styles.css"
+              "projects/ngx-flat-ui-app/src/styles.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -67,8 +67,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/madui-app/src/environments/environment.ts",
-                  "with": "projects/madui-app/src/environments/environment.prod.ts"
+                  "replace": "projects/ngx-flat-ui-app/src/environments/environment.ts",
+                  "with": "projects/ngx-flat-ui-app/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -93,34 +93,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "madui-app:build"
+            "browserTarget": "ngx-flat-ui-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "madui-app:build:production"
+              "browserTarget": "ngx-flat-ui-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "madui-app:build"
+            "browserTarget": "ngx-flat-ui-app:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/madui-app/src/test.ts",
-            "polyfills": "projects/madui-app/src/polyfills.ts",
-            "tsConfig": "projects/madui-app/tsconfig.spec.json",
-            "karmaConfig": "projects/madui-app/karma.conf.js",
+            "main": "projects/ngx-flat-ui-app/src/test.ts",
+            "polyfills": "projects/ngx-flat-ui-app/src/polyfills.ts",
+            "tsConfig": "projects/ngx-flat-ui-app/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-flat-ui-app/karma.conf.js",
             "styles": [
-              "projects/madui-app/src/styles.css"
+              "projects/ngx-flat-ui-app/src/styles.css"
             ],
             "scripts": [],
             "assets": [
-              "projects/madui-app/src/favicon.ico",
-              "projects/madui-app/src/assets"
+              "projects/ngx-flat-ui-app/src/favicon.ico",
+              "projects/ngx-flat-ui-app/src/assets"
             ]
           }
         },
@@ -128,8 +128,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/madui-app/tsconfig.app.json",
-              "projects/madui-app/tsconfig.spec.json"
+              "projects/ngx-flat-ui-app/tsconfig.app.json",
+              "projects/ngx-flat-ui-app/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -138,27 +138,27 @@
         }
       }
     },
-    "madui-app-e2e": {
-      "root": "projects/madui-app-e2e/",
+    "ngx-flat-ui-app-e2e": {
+      "root": "projects/ngx-flat-ui-app-e2e/",
       "projectType": "application",
       "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/madui-app-e2e/protractor.conf.js",
-            "devServerTarget": "madui-app:serve"
+            "protractorConfig": "projects/ngx-flat-ui-app-e2e/protractor.conf.js",
+            "devServerTarget": "ngx-flat-ui-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "madui-app:serve:production"
+              "devServerTarget": "ngx-flat-ui-app:serve:production"
             }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "projects/madui-app-e2e/tsconfig.e2e.json",
+            "tsConfig": "projects/ngx-flat-ui-app-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
@@ -167,5 +167,5 @@
       }
     }
   },
-  "defaultProject": "madui"
+  "defaultProject": "ngx-flat-ui"
 }

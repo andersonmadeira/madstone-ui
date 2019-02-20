@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MadUIModule } from 'madui';
+import { NgxFlatUIModule } from 'ngx-flat-ui';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MadUIModule,
+    NgxFlatUIModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

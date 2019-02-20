@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to madui-app!');
+    expect(page.getTitleText()).toEqual('Welcome to ngx-flat-ui-app!');
   });
 
   afterEach(async () => {

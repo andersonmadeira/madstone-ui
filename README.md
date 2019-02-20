@@ -1,3 +1,3 @@
-# 💠 MadUI
+# 💠 ngx-flat-ui
 
-MadUI Components for the web.
+ngx-flat-ui Components for the web.
