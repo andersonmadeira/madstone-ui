@@ -1,3 +1,3 @@
 # 💠 ngx-flat-ui
 
-ngx-flat-ui Components for the web.
+A collection of UI components built for Angular 2+ Apps
